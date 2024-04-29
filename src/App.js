@@ -66,7 +66,7 @@ function App() {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: "grant_type=client_credentials&client_id=959a4914978d415f9ac59b9e36ac5ec4&client_secret=bd24a884aa744235b2b256ae7da7c418",
+          body: "grant_type=client_credentials&client_id=${client_id}&client_secret=${client_secret}",
         });
 
         if (!response.ok) {
